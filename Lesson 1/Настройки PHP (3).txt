@@ -1,0 +1,62 @@
+#.htaccess в Apache
+	Options Indexes FollowSymLinks
+	DirectoryIndex Index.php
+
+
+#Настройка
+	php_flag short_open_tag on		//Короткие тэги
+
+	LoadModule php5_module "c:/php/php5apache2_2.dll"	//Прикручиваем PHP к Apache
+	AddType application/x-httpd-php .phtml .php
+
+	Options Indexes FollowSymLinks MultiViews
+	AllowOverride all
+
+
+#Функции
+	$							//переменная
+	echo, print						//Вывод
+	\n							//переход на новую строку
+	\t							//табуляция
+	\r							//возврат каретки
+	\							//экранирует спец символы в двойных кавычках
+	<<<LABEL-LABEL;				//Выводит все символы
+	${beer}s						//Экранирование переменной
+
+	$beer = 'Baltika';	
+	echo $beer{0}					//Получение первого символа
+	$a += $b						//Тоже, что и $a = $a + $b
+	.							//Склеивает операторы
+	
+	unset(имя_переменной)			//Удаляет переменную
+	isset(имя_переменной)			//Сообщает существует ли переменная
+	empty(имя_переменной)			//Сообщает присвоено ли переменной значение
+	gettype(имя_переменной)			//Сообщает тип переменной
+	settype(имя_переменной, "тип")	//Конвертирует переменную в другой тип
+	(тип)имя_переменной;			//(str)$beer
+	
+	NULL
+	integer	//Число
+	string
+	double	//float
+	boolean
+	
+#Операторы сравнения
+	
+	$a == $b						//Сравнения
+	$a === $b						//Жесткое сравнения
+	$a != $b						//Не равно
+	$a !== $b						//Жесткое не равно
+	<, >,  <=,  >=
+	
+#Операторы логические
+
+	$a and $b						//И
+	$a or $b						//Или
+	$a && $b						//И
+	$a || $b						//Или
+	!$a 							//Если а не TRUE
+	
+	echo $a==2 ? 'two' : 'not two'; //Тернарный оператор
+	
+	

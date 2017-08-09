@@ -1,0 +1,15 @@
+body{
+background:#999999;
+}
+table, td{
+}
+p{
+padding:0;
+margin:0;
+}
+p.bold{
+font-size:1.5em;
+font-weight:bold;
+padding-bottom:15px;
+margin:0;
+}
