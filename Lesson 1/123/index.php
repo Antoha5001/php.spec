@@ -43,6 +43,7 @@
 			case "page2":include"page2.php";break;
 			case "page3":include"page3.php";break;
 			case "table":include"table.php";
+            default:include "home.php";
 		}
 		?>
 	</td>
